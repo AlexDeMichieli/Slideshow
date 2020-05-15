@@ -7,7 +7,7 @@ let test = document.getElementById("index");
 
 
 let newArrray = [];
-let emptyThumbailArray = []
+let emptyThumnbailArray = []
 let index = 0;
 
 for (let i=0; i< images.length; i++) {
@@ -57,13 +57,15 @@ function forward(){
  
  function pushArray() {
    
-     emptyThumbailArray.push(images[index])
+     emptyThumnbailArray.push(images[index])
   
-    if (emptyThumbailArray.length > 1){
+    if (emptyThumnbailArray.length > 1){
       
-    emptyThumbailArray[(emptyThumbailArray.length -1) -1].style.width = "10%"
-    emptyThumbailArray[(emptyThumbailArray.length -1) -1].style.transition = "all .1s";
-    console.log(emptyThumbailArray)
+      emptyThumnbailArray[(emptyThumnbailArray.length -1) -1].style.width = "10%"
+      emptyThumnbailArray[(emptyThumnbailArray.length -1) -1].style.transition = "all .1s";
+      emptyThumbailArray.shift()
+
+    console.log(emptyThumnbailArray)
     }
    
  }
